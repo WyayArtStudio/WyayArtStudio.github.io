@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>網頁標題</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="[網頁網址_URL]" />
+    <!--Favicon-->
+    <link rel="icon" href="[favicon.ico]" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- phosphor icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body>
+    <nav class="mq flex justify-between items-center fixed top-0 left-0 w-full">
+        <div class="logo pr-4">
+            <a href="index.html"><img src="img/logo-w.svg" alt="" class="logo"></a>
+        </div>
+        <div class="links">
+            <a href="members.html" class="hover:text-wyay-primary">成員 MEMBERS</a>
+            <a href="gallery.html">作品 GALLERY</a>
+            <a href="contact.html">聯絡 CONTACT</a>
+        </div>
+    </nav>
+    <div class="site-content reveal">
+        <div class="marquee-container">
+            <div class="overlay">
+                <div class="t-1 marquee-wrapper">
+                    <h1>Mulink Mulink Mulink Mulink Mulink</h1>
+                </div>
+                <div class="t-2 marquee-wrapper">
+                    <h1>Mioo Mioo Mioo Mioo Mioo</h1>
+                </div>
+                <div class="t-3 marquee-wrapper">
+                    <h1>BreadCC BreadCC BreadCC BreadCC BreadCC</h1>
+                </div>
+                <div class="t-4 marquee-wrapper">
+                    <h1>18xDay 18xDay 18xDay 18xDay 18xDay</h1>
+                </div>
+                <div class="t-5 marquee-wrapper">
+                    <h1>PIANN PIANN PIANN PIANN PIANN</h1>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal-images">
+                    <div class="mbimg" id="t-1">
+                        <img src="/img/mulink.png" alt="">
+                    </div>
+                    <div class="mbimg" id="t-2">
+                        <img src="/img/mioo.png" alt="">
+                    </div>
+                    <div class="mbimg" id="t-3">
+                        <img src="/img/breadcc.jpg" alt="">
+                    </div>
+                    <div class="mbimg" id="t-4">
+                        <img src="/img/18.png" alt="">
+                    </div>
+                    <div class="mbimg" id="t-5">
+                        <img src="/img/piann.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <p class="name">木零可</p>
+                <div class="role">illustrator</div>
+                <div class="email text-xs text-black opacity-50 hover:opacity-100">mulink.art@gmail.com</div>
+            </div>
+            <div class="cursor">
+                <i class="ph-light ph-arrow-left"></i>
+            </div>
+        </div>
+    </div>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+        });
+        const team = [
+            { name: "木零可", role: "Illustrator", email: "mulink.art@gmail.com" },
+            { name: "謬", role: "Illustrator", email: "artwork.mioo@gmail.com" },
+            { name: "麵包屑屑", role: "Illustrator", email: "goodnight10310414@gmail.com" },
+            { name: "十八日", role: "Writer", email: "moxuan518@gmail.com" },
+            { name: "餅乾", role: "Illustrator", email: "piann.official.tw@gmail.com" },
+        ]
+
+        const cursor = document.querySelector('.cursor');
+        const cursorIcon = cursor.querySelector('i');
+
+        const cursorWidth = cursor.offsetWidth / 2;
+        const cursorHeight = cursor.offsetHeight / 2;
+
+        let currentSlide = 1;
+        const totalSlides = 5;
+
+        const updateCursorClass = (xPosition) => {
+            const halfPageWidth = window.innerWidth / 2;
+            console.log(halfPageWidth)
+            if(xPosition > halfPageWidth) {
+                if(currentSlide < totalSlides) {
+                    cursorIcon.classList.remove('ph-arrow-left');
+                    cursorIcon.classList.add('ph-arrow-right');
+                    cursor.style.display = '';
+                } else {
+                    cursor.style.display = 'none';
+                }
+            } else {
+                    if(currentSlide > 1){
+                        cursorIcon.classList.remove('ph-arrow-right');
+                        cursorIcon.classList.add('ph-arrow-left');
+                        cursor.style.display = '';
+                    } else {
+                        cursor.style.display = 'none';
+                    }
+                }
+                console.log('updateCursorClass pass')
+        }
+        document.addEventListener('mousemove', (e) => {
+            gsap.to(cursor, {
+                x: e.clientX - cursorWidth - 5,
+                y: e.clientY - cursorHeight -10,
+                duration: 1,
+                ease: "power3.out"
+            });
+
+            updateCursorClass(e.clientX)
+        })
+
+        const updateInfo = (slideNumber) => {
+            const member = team[slideNumber - 1];
+            document.querySelector('.info .name').textContent = member.name;
+            document.querySelector('.info .role').textContent = member.role;
+            document.querySelector('.info .email').textContent = member.email;
+        }
+
+        const animateSlide = (slideNumber, reveal) => {
+            const marquee = document.querySelector(`.t-${slideNumber}.marquee-wrapper`);
+            const img = document.getElementById(`t-${slideNumber}`);
+            const clipPathValue = reveal ? 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)' : 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)';
+
+            gsap.to(marquee, { clipPath: clipPathValue, duration: 1, ease: 'power4.out', delay: 0.3 });
+            gsap.to(img, { clipPath: clipPathValue, duration: 1, ease: 'power4.out'});
+        }
+
+        updateInfo(currentSlide);
+
+        const handleRightClick = () => {
+            if(currentSlide < totalSlides) {
+                animateSlide(currentSlide + 1, true);
+                currentSlide++;
+                updateInfo(currentSlide);
+            }
+        }
+        const handleLeftClick = () => {
+            if(currentSlide > 1) {
+                animateSlide(currentSlide, false);
+                currentSlide--;
+                updateInfo(currentSlide);
+            }
+        }
+
+        document.addEventListener('click', (e) => {
+            const halfPageWidth = window.innerWidth / 2;
+            if(e.clientX > halfPageWidth) {
+                handleRightClick();
+            } else {
+                handleLeftClick();
+            }
+        })
+    </script>
+
+</body>
+
+</html>
