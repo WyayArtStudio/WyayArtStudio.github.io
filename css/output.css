@@ -713,6 +713,7 @@ html, body{
 
 .site-content{
   position: relative;
+  width: 100%;
   z-index: -2;
 }
 

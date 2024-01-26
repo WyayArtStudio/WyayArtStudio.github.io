@@ -69,7 +69,7 @@ html, body {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .site-content {
-    @apply relative;
+    @apply relative w-full;
     z-index: -2;
 }
 nav {
