@@ -73,7 +73,8 @@ html, body {
     z-index: -2;
 }
 nav {
-    @apply w-full p-[2em] flex z-10 relative
+    @apply w-full p-[2em] flex relative;
+    z-index: 999;
 }
 nav.mq {
     @apply fixed
@@ -85,7 +86,7 @@ nav div {
     flex: 1;
 }
 .links {
-    @apply flex justify-end gap-[5em];
+    @apply flex justify-end gap-[5em] cursor-pointer;
 
 }
 .site-content.reveal {
@@ -94,6 +95,19 @@ nav div {
 
 .links a:hover {
     @apply text-[--wyay-primary]
+}
+.links a {
+    @apply relative cursor-pointer inline-flex
+}
+.links.w a:hover {
+    @apply text-white;
+}
+.links a.active:after {
+    @apply content-[''] absolute top-[120%] h-1 w-4 bg-[--wyay-primary] z-10 ;
+    left: calc(50% - 8px);
+}
+.links.w a.active:after {
+    @apply  bg-white;
 }
 .header {
     @apply flex p-[1em] pt-20 md:pt-10;
@@ -210,6 +224,13 @@ footer div {
 }
 .t-5 {
     @apply bg-[#F1EDEA];
+}
+
+.status-tag-wrap {
+    @apply absolute z-20 top-0 left-0 w-full flex gap-2 py-2
+}
+.status-tag {
+    @apply bg-black text-white p-4 py-2 inline-flex justify-center items-center
 }
 
 @media(max-width: 900px) {
